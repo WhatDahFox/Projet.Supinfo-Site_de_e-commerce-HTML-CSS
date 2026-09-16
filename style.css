@@ -5,6 +5,10 @@
     --main-color: #dfd5c5;
     --second-color: #644734;
     --third-color: #bf9883;
+    h2{
+        color: var(--second-color);
+        font-size: 40px;
+    }
 }
 /* ============================================
 1. Body
@@ -14,7 +18,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
     gap: 0;
-    background-color: var(--main-color);
     margin: 1rem;
     min-height: 100dvh;
 }
@@ -30,34 +33,38 @@
     border-bottom: 5px solid var(--second-color);
     background-color: white;
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 10dvw;
-    align-items: center;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
     padding: 5px;
 }
-#logo{
+.menu_header{
     grid-column: 1;
+    color: var(--second-color);
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 10px;
+}
+#logo{
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
 }
 #logo img{
     height: 100%;
     max-width: 200px;
+    object-fit: contain;
 }
-.header h1{
-    grid-column: 2;
-    color: var(--second-color);
-    font-size: 3em;
-    justify-self: center;
-}
-.header .partie_utilisateur{
+.partie_utilisateur{
     grid-column: 3;
     color: var(--second-color);
     display: flex;
     gap: 1rem;
     justify-self: end;
+    align-items: center;
     flex-wrap: nowrap;
     font-size: 1.1em;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 /* ============================================
 3. Hero
@@ -73,7 +80,7 @@
     height: 100%;
     object-fit: cover;
 }
-.hero p{
+.hero h2{
     position: absolute;
     top: 10px;
     left: 20px;
@@ -92,11 +99,12 @@ main{
     4.1 Main - a la une
      ============================================ */
     .bloc_a_la_une{
-        border: 1px solid black;
-        gap: 2px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto 10dvw;
+        grid-template-rows: auto 20dvw;
+        column-gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .bloc_categorie_a_la_une{
         grid-row: 1;
@@ -109,11 +117,16 @@ main{
     .item_a_la_une:hover, .item_a_la_une:active, .item_a_la_une:focus{
         filter: brightness(60%);
     }
-    .bloc_a_la_une h2{
+    .bloc_a_la_une .en-tete_categorie_a_la_une{
         grid-row: 1;
         grid-column: 1/-1;
         margin: 0;
         color: var(--second-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .bloc_a_la_une img{
         display: block;
@@ -136,24 +149,97 @@ main{
     }
     .bloc_article_a_la_une{
         grid-row: 2;
+        margin-bottom: 1.5rem;
     }
     /* ============================================
-    4.2 Main - Contenu
+    4.2 Main - Hero final
      ============================================ */
-    .contenu{
-        grid-column: 1;
+    #hero_final{
         grid-row: 3;
-        border: 1px solid black;
+        overflow: hidden;
+        position: relative;
+    }
+    #hero_final img{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+    #hero_final h2{
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        color: var(--second-color);
+        font-size: 40px;
+    }
+    .chiffre p{
+        position: absolute;
+        color: var(--second-color);
+        text-align: center;
+    }
+    #chiffre1{
+        top: 90px;
+        left: 30px;
+    }
+    #chiffre2{
+        top: 85px;
+        left: 175px;
+    }
+    #chiffre3{
+        top: 75px;
+        left: 340px;
+    }
+    #chiffre4{
+        top: 75px;
+        left: 500px;
+    }
+    #chiffre5{
+        top: 80px;
+        left: 610px;
     }
 /* ============================================
 5. Footer
  ============================================ */
 .footer {
     grid-row: 4;
-    background-color: var(--second-color);
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 5px solid var(--second-color);
+    padding: 1rem;
+}
+.navigation_footer, .informations, .reseaux_sociaux{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap : 0.5rem;
+    justify-content: flex-start;
+}
+.navigation_footer{
+    grid-column: 1;
+    padding-left: 10px;
+    justify-self: start;
+}
+.informations{
+    grid-column: 2;
+    align-content: center;
+    text-align: center;
+}
+.reseaux_sociaux{
+    grid-column: 3;
+    justify-self: end;
+    padding-right: 10px;
+}
+.logos_reseaux_sociaux img{
+    display: block;
+    height: 30px;
+    object-fit: contain;
+    margin: 5px;
+}
+.logos_reseaux_sociaux{
+    display: flex;
+}
+.footer h3{
+    margin: 0;
 }
 /* ============================================
 X. Responsive Mobile ---> Ordinateur
