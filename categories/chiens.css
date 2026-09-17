@@ -1,0 +1,87 @@
+/* ============================================
+0. Base
+ ============================================ */
+
+/* ============================================
+1. Hero
+ ============================================ */
+.hero{
+    height: 300px;
+}
+/* ============================================
+2. Autres catégories
+ ============================================ */
+.autres_categories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.autres_categories a{
+    color: var(--second-color);
+    border-radius: 30px;
+    border: 1px solid var(--second-color);
+    margin: 20px;
+    padding: 5px 20px 5px 20px;
+}
+#categorie_actuelle{
+    background-color: var(--third-color);
+    color: black;
+}
+/* ============================================
+3. Articles
+ ============================================ */
+.bloc_articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto auto 1fr;
+    background-color: var(--couleur-4);
+    border-radius: 30px;
+    border: 1px solid var(--main-color);
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+.article img{
+    grid-row: 1;
+    width: 150px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+}
+.nom_article, .prix_article{
+    justify-self: center;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.nom_article{
+    grid-row: 2;
+}
+.prix_article{
+    grid-row: 3;
+}
+.article a{
+    grid-row: 4;
+    align-self: end;
+    justify-self: stretch;
+    padding: 10px;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 30px;
+}
+#coming_soon{
+    background-color: var(--third-color);
+}
+/* ============================================
+4. Footer
+ ============================================ */
+footer{
+    margin-top: 20px;
+}

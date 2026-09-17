@@ -1,0 +1,9 @@
+Question : 
+4 catégories, 8 articles : donc 2 articles par catégorie = ok ?
+
+Prochaine étape :
+- Catégorie, chats, rongeurs, oiseaux
+
+A faire : 
+- Franciser le code
+- nettoyer le code
