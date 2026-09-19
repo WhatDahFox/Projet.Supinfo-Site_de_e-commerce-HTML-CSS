@@ -17,14 +17,14 @@
     align-items: center;
 }
 .autres_categories a{
-    color: var(--second-color);
+    color: var(--marron-foncé);
     border-radius: 30px;
-    border: 1px solid var(--second-color);
+    border: 1px solid var(--marron-foncé);
     margin: 20px;
     padding: 5px 20px 5px 20px;
 }
 #categorie_actuelle{
-    background-color: var(--third-color);
+    background-color: var(--marron-clair);
     color: black;
 }
 /* ============================================
@@ -40,9 +40,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px auto auto 1fr;
-    background-color: var(--couleur-4);
+    background-color: var(--blanc-cassé);
     border-radius: 30px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--beige);
     width: 200px;
     height: 300px;
     overflow: hidden;
@@ -72,12 +72,12 @@
     padding: 10px;
     margin: 0 10px 20px 10px;
     text-align: center;
-    background-color: var(--second-color);
+    background-color: var(--marron-foncé);
     color: white;
     border-radius: 30px;
 }
-#coming_soon{
-    background-color: var(--third-color);
+.article a.coming_soon{
+    background-color: var(--marron-clair);
 }
 /* ============================================
 4. Footer
