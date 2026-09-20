@@ -1,8 +1,5 @@
-Question : 
-4 catégories, 8 articles : donc 2 articles par catégorie = ok ?
-
 Prochaine étape :
-- Catégorie, chats, rongeurs, oiseaux
+- Lien catégorie sur les pages articles
 
 A faire : 
 - Franciser le code

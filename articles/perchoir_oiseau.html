@@ -1,10 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt' un pote</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
 </head>
-<body>
-
+<body class="conteneur">
+<header class="block header">
+    <nav class="menu_header">
+        <a href="../index.html"> Accueil </a>
+        <a href="../categories/boutique_categorie.html"> Boutique </a>
+    </nav>
+    <a id="logo" href="../index.html">
+        <img src="../image/logo.png" alt="logo de l'association">
+    </a>
+    <div class="partie_utilisateur">
+        <a href=""> Contact </a>
+        <a href=""> Mon panier </a>
+    </div>
+</header>
+<main>
+    <div class="photo_article">
+        <img class="image1" src="../image/articles/perchoir_oiseau_vide.png" alt="Perchoir pour oiseaux en bois sur roulettes, équipé de plusieurs branches, d'une échelle en corde, de deux gamelles et de jouets suspendus.">
+        <img class="image2" src="../image/articles/perchoir_oiseau_plein.png" alt="Perchoir pour oiseaux en bois sur roulettes, équipé de plusieurs branches, d'une échelle en corde, de deux gamelles et de jouets suspendus. Contenant deux perruches, une bleue et une verte.">
+    </div>
+    <div class="en_tete_article">
+        <p class="categorie_article"> 🐦‍⬛ Oiseaux 🐦‍⬛ </p>
+        <p class="nom_article"> Perchoir à oiseau </p>
+        <p class="prix_article"> 44,90€ </p>
+    </div>
+    <div class="achat">
+        <div class="selecteur_de_quantite">
+            <label for="quantite"> Quantité : </label>
+            <input type="number" name="quantite" id="quantite" min="1" max="99" step="1" value="1">
+        </div>
+        <a href="panier.html"> 🛒 Ajouter au panier </a>
+    </div>
+    <div class="description_article">
+        <div class="type_description">
+            <p class="titre_description"> Description </p>
+            <p> Caractéristiques</p>
+        </div>
+        <p class="texte_description"> Offrez à vos oiseaux un véritable espace de jeu et de détente
+            avec ce perchoir en bois naturel à plusieurs niveaux. Ses nombreuses branches
+            permettent à vos compagnons à plumes de grimper, de se déplacer et
+            de se reposer tout au long de la journée.
+            Équipé d'une échelle suspendue, d'une corde d'équilibre et de plusieurs
+            jouets colorés avec clochettes, ce perchoir stimule leur curiosité
+            et encourage leur activité physique. Ses deux mangeoires en acier
+            inoxydable facilitent les repas, tandis que son plateau de récupération
+            et ses roulettes rendent son entretien et son déplacement pratiques. </p>
+    </div>
+    <div class="caracteristique_article">
+        <div class="type_description">
+            <p> Description </p>
+            <p class="titre_description"> Caractéristiques</p>
+        </div>
+        <ul class="texte_description">
+            <li>Type : Perchoir et aire de jeux pour oiseaux.</li>
+            <li>Dimensions : 80 × 60 × 150 cm.</li>
+            <li>Poids : 9 kg.</li>
+            <li>Coloris : Bois naturel et accessoires multicolores.</li>
+            <li>Matériaux : Bois naturel, corde en coton et acier inoxydable.</li>
+            <li>Structure : Tronc central avec plusieurs branches à différentes hauteurs.</li>
+            <li>Équipements : Plateforme de repos, échelle suspendue et corde d'équilibre.</li>
+            <li>Jouets inclus : Anneau à perles, jouet en bois coloré et balle en osier.</li>
+            <li>Accessoires : Deux mangeoires amovibles en acier inoxydable.</li>
+            <li>Entretien : Plateau de récupération amovible et facilement lavable.</li>
+            <li>Mobilité : Quatre roulettes pivotantes avec système de blocage.</li>
+            <li>Utilisation : Adapté aux perruches, calopsittes et petits perroquets.</li>
+            <li>Montage : Livré en kit avec notice et accessoires de fixation.</li>
+        </ul>
+    </div>
+    <div class="bloc_article_conseille">
+        <div class="en_tete_article_conseille">
+            <p> 🐦‍⬛ Vous aimerez aussi ... </p>
+            <p> ➞ </p>
+        </div>
+        <div class="carte_article_conseille">
+            <div class="article_conseille">
+                <img src="../image/articles/cage_oiseau_vide.png" alt="">
+                <p class="nom_article_conseille"> Cage à oiseau </p>
+                <p class="prix_article_conseille"> 34,90€ </p>
+                <a class="lien_article_conseille" href="../articles/cage_oiseau.html"> Voir le produit &nbsp; &nbsp; ➽ </a>
+            </div>
+            <div class="article_conseille article_coming_soon">
+                <img src="../image/coming_soon.png" alt="Texte intégré : 'Coming soon'">
+                <p class="nom_article_conseille"> Article à venir </p>
+                <p class="prix_article_conseille"> 0€ </p>
+                <span class="lien_article_conseille coming_soon"> Indisponible </span>
+            </div>
+            <div class="article_conseille article_coming_soon">
+                <img src="../image/coming_soon.png" alt="Texte intégré : 'Coming soon'">
+                <p class="nom_article_conseille"> Article à venir </p>
+                <p class="prix_article_conseille"> 0€ </p>
+                <span class="lien_article_conseille coming_soon"> Indisponible </span>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="block footer">
+    <div class="navigation_footer">
+        <h3> Navigation </h3>
+        <a href="../index.html"> Accueil </a>
+        <a href="../categories/boutique_categorie.html"> Boutique </a>
+    </div>
+    <div class="informations">
+        <h3> Informations </h3>
+        <a href="mentions_legales-crédit.html"> Mentions Légales | Crédit </a>
+    </div>
+    <div class="reseaux_sociaux">
+        <h3> Réseaux sociaux </h3>
+        <div class="logos_reseaux_sociaux">
+            <a href="404.html">
+                <img src="../image/logo_instagram.png" alt="Icone d'instagram">
+            </a>
+            <a href="404.html">
+                <img src="../image/logo_facebook.png" alt="Icone de Facebook">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

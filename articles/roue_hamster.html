@@ -1,10 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Arbre à chat </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="article.css">
 </head>
-<body>
-
+<body class="conteneur">
+<header class="block header">
+    <nav class="menu_header">
+        <a href="../index.html"> Accueil </a>
+        <a href="../categories/boutique_categorie.html"> Boutique </a>
+    </nav>
+    <a id="logo" href="../index.html">
+        <img src="../image/logo.png" alt="logo de l'association">
+    </a>
+    <div class="partie_utilisateur">
+        <a href=""> Contact </a>
+        <a href=""> Mon panier </a>
+    </div>
+</header>
+<main>
+    <div class="photo_article">
+        <img class="image1" src="../image/articles/roue_hamster_face.png" alt="Roue de hamster en bois avec un hamster blanc qui court à l'intérieur.">
+        <img class="image2" src="../image/articles/roue_hamster_dos.png" alt="Roue de hamster en bois vue de dos.">
+    </div>
+    <div class="en_tete_article">
+        <p class="categorie_article"> 🐀 Rongeurs 🐀 </p>
+        <p class="nom_article"> Roue de hamster </p>
+        <p class="prix_article"> 17,90€ </p>
+    </div>
+    <div class="achat">
+        <div class="selecteur_de_quantite">
+            <label for="quantite"> Quantité : </label>
+            <input type="number" name="quantite" id="quantite" min="1" max="99" step="1" value="1">
+        </div>
+        <a href="panier.html"> 🛒 Ajouter au panier </a>
+    </div>
+    <div class="description_article">
+        <div class="type_description">
+            <p class="titre_description"> Description </p>
+            <p> Caractéristiques</p>
+        </div>
+        <p class="texte_description"> Offrez à votre hamster un espace d'activité confortable avec
+            cette roue d'exercice en bois naturel. Sa large surface de course permet à votre
+            petit compagnon de se dépenser tout en stimulant son instinct d'exploration.
+            Son mécanisme à roulement silencieux limite les bruits pendant les
+            activités nocturnes, tandis que sa surface pleine assure une meilleure
+            stabilité des pattes. Son socle robuste et son design en bois clair
+            s'intègrent facilement dans l'habitat de votre rongeur. </p>
+    </div>
+    <div class="caracteristique_article">
+        <div class="type_description">
+            <p> Description </p>
+            <p class="titre_description"> Caractéristiques</p>
+        </div>
+        <ul class="texte_description">
+            <li>Type : Roue d'exercice pour hamster.</li>
+            <li>Dimensions : 32 × 18 × 35 cm.</li>
+            <li>Diamètre de la roue : 30 cm.</li>
+            <li>Poids : 1,8 kg.</li>
+            <li>Matériau : Bois naturel de bouleau.</li>
+            <li>Coloris : Bois clair.</li>
+            <li>Mécanisme : Roulement à billes silencieux.</li>
+            <li>Surface de course : Pleine et antidérapante.</li>
+            <li>Support : Socle stable avec fixation renforcée.</li>
+            <li>Utilisation : Adaptée aux hamsters syriens et aux petits rongeurs.</li>
+            <li>Entretien : Nettoyage au chiffon légèrement humide.</li>
+            <li>Montage : Livrée avec notice et accessoires de fixation.</li>
+        </ul>
+    </div>
+    <div class="bloc_article_conseille">
+        <div class="en_tete_article_conseille">
+            <p> 🐀 Vous aimerez aussi ... </p>
+            <p> ➞ </p>
+        </div>
+        <div class="carte_article_conseille">
+            <div class="article_conseille">
+                <img src="../image/articles/cage_hamster_face.png" alt="Cage pour hamster blanche avec bac beige, comprenant roue d'exercice, maisonnette en bois, échelle, tunnel, gamelle et biberon d'eau.">
+                <p class="nom_article_conseille"> Cage pour hamster </p>
+                <p class="prix_article_conseille"> 69,99€ </p>
+                <a class="lien_article_conseille" href="../articles/cage_hamster.html"> Voir le produit &nbsp; &nbsp; ➽ </a>
+            </div>
+            <div class="article_conseille article_coming_soon">
+                <img src="../image/coming_soon.png" alt="Texte intégré : 'Coming soon'">
+                <p class="nom_article_conseille"> Article à venir </p>
+                <p class="prix_article_conseille"> 0€ </p>
+                <span class="lien_article_conseille coming_soon"> Indisponible </span>
+            </div>
+            <div class="article_conseille article_coming_soon">
+                <img src="../image/coming_soon.png" alt="Texte intégré : 'Coming soon'">
+                <p class="nom_article_conseille"> Article à venir </p>
+                <p class="prix_article_conseille"> 0€ </p>
+                <span class="lien_article_conseille coming_soon"> Indisponible </span>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="block footer">
+    <div class="navigation_footer">
+        <h3> Navigation </h3>
+        <a href="../index.html"> Accueil </a>
+        <a href="../categories/boutique_categorie.html"> Boutique </a>
+    </div>
+    <div class="informations">
+        <h3> Informations </h3>
+        <a href="mentions_legales-crédit.html"> Mentions Légales | Crédit </a>
+    </div>
+    <div class="reseaux_sociaux">
+        <h3> Réseaux sociaux </h3>
+        <div class="logos_reseaux_sociaux">
+            <a href="404.html">
+                <img src="../image/logo_instagram.png" alt="Icone d'instagram">
+            </a>
+            <a href="404.html">
+                <img src="../image/logo_facebook.png" alt="Icone de Facebook">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
