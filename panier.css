@@ -1,0 +1,151 @@
+/* ============================================
+0. Base
+ ============================================ */
+
+/* ============================================
+1. Main
+ ============================================ */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    background-color: var(--blanc-cassé);
+}
+/* ============================================
+2. En tête panier
+ ============================================ */
+.en_tete_panier{
+    color: var(--marron-foncé);
+    margin-left: 30px;
+}
+/* ============================================
+3. Article panier
+ ============================================ */
+.bloc_article_panier{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 30px 10px 30px;
+}
+.article_panier{
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid var(--marron-clair);
+    border-bottom: 1px solid var(--marron-clair);
+}
+.article_panier img{
+    grid-column: 1;
+    width: 200px;
+}
+.information_article_panier{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    margin-left: 10px;
+}
+.nom_article_panier, .prix_article_panier{
+    color: var(--marron-foncé);
+    font-size: 1.3rem;
+    justify-self: start;
+}
+.categorie_article_panier{
+    color: var(--marron-clair);
+}
+.resume_article_panier{
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+}
+.quantite_article_panier{
+    background-color: var(--marron-clair);
+    border: 1px solid var(--marron-clair);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.prix_article_panier{
+    color: var(--marron-foncé);
+}
+.suppression_article_panier{
+    color: var(--marron-clair);
+    border-bottom: 1px solid var(--marron-clair);
+}
+/* ============================================
+3. Récapitulatif commande
+ ============================================ */
+.recapitulatif_commande{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--blanc-cassé);
+    background-color: var(--beige);
+    border-radius: 20px;
+    margin: 20px 100px 20px 100px;
+}
+.titre_recapitulatif_commande{
+    color: var(--marron-foncé);
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    justify-self: start;
+    margin: 10px 0 0 20px;
+    font-size: 2rem;
+}
+.sous_total_commande, .livraison_commande, .total_commande{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto 20px auto 20px;
+}
+.sous_total_commande{
+    grid-row: 2;
+}
+.livraison_commande{
+    grid-row: 3;
+}
+.total_commande{
+    grid-row: 4;
+}
+.valider_panier{
+    grid-row: 5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--marron-foncé);
+    color: white;
+    justify-self: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.valider_panier:active{
+    background-color: darkgreen;
+}
+.continuer_achat{
+    grid-row: 6;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--blanc-cassé);
+    color: var(--marron-foncé);
+    justify-self: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}

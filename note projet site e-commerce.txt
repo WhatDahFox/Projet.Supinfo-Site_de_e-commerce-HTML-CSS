@@ -1,6 +1,11 @@
-Prochaine étape :
+Etape restante :
 - Lien catégorie sur les pages articles
+- Page support avec formulaire
+- Responsive tablette
+- Responsive Ordinateur
+- Checker accessibilités
+- Nettoyage du code 
 
-A faire : 
-- Franciser le code
-- nettoyer le code
+QUESTION :
+- Mentions légales/crédit, une page entière ? Ou juste le copyright en bas de la page.
+- Le bonus c'est pas plutôt à l'intervenant de le justifier ?
