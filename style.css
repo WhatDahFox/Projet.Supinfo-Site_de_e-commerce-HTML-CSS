@@ -6,7 +6,7 @@
     --marron-foncé: #644734;
     --marron-clair: #bf9883;
     --blanc-cassé: #f7f4f0;
-    h2{
+    h1{
         color: var(--marron-foncé);
         font-size: 40px;
     }
@@ -89,7 +89,7 @@ main{
         height: 100%;
         object-fit: cover;
     }
-    .hero h2{
+    .hero h1{
         position: absolute;
         top: 10px;
         left: 20px;
@@ -165,7 +165,7 @@ main{
         width: 100%;
         object-fit: cover;
     }
-    #hero_final h2{
+    #hero_final h1{
         position: absolute;
         top: 0;
         right: 20px;
@@ -223,8 +223,10 @@ main{
 }
 .informations{
     grid-column: 2;
-    align-content: center;
     text-align: center;
+}
+.informations p{
+    margin: 0;
 }
 .reseaux_sociaux{
     grid-column: 3;
@@ -240,7 +242,7 @@ main{
 .logos_reseaux_sociaux{
     display: flex;
 }
-.footer h3{
+.footer h2{
     margin: 0;
 }
 /* ============================================
@@ -271,6 +273,58 @@ main{
 }
 .page404 a{
     margin: 1rem;
+}
+/* ============================================
+6. Page Contact
+ ============================================ */
+.page_formulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--marron-foncé);
+    background: var(--beige);
+}
+.page_formulaire h1{
+    font-size: 4rem;
+    margin: 0 1rem 1rem 1rem;
+}
+.page_formulaire p{
+    font-size: 1.5rem;
+    margin: 0 0 2rem 0;
+    text-align: center;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanc-cassé);
+    padding: 1rem 4rem;
+    font-size: 2rem;
+    box-sizing: border-box;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.formulaire input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.formulaire textarea{
+    width: 100%;
+    padding: 3rem 8rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.formulaire input[type="submit"]{
+    width: auto;
+    align-self: center;
+    padding : 1rem 2rem;
+    margin-top: 1rem;
+}
+.obligatoire::after{
+    content: "*";
+    color: red;
 }
 /* ============================================
 X. Responsive Mobile ---> Ordinateur

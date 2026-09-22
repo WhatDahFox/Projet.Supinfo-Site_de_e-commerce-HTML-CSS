@@ -1,11 +1,9 @@
 Etape restante :
-- Lien catégorie sur les pages articles
-- Page support avec formulaire
+- Organisation des fichiers
+- Nettoyage du code
 - Responsive tablette
 - Responsive Ordinateur
-- Checker accessibilités
-- Nettoyage du code 
 
-QUESTION :
-- Mentions légales/crédit, une page entière ? Ou juste le copyright en bas de la page.
-- Le bonus c'est pas plutôt à l'intervenant de le justifier ?
+Diapositive : 
+- Court rapport avec les détails de conformité WCAG : 3 points
+

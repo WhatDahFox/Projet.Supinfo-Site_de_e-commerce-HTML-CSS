@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt' un pote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="conteneur">
+<header class="block header">
+    <nav class="menu_header">
+        <a href="index.html"> Accueil </a>
+        <a href="categories/boutique_categorie.html"> Boutique </a>
+    </nav>
+    <a id="logo" href="index.html">
+        <img src="./image/logo.png" alt="logo de l'association">
+    </a>
+    <div class="partie_utilisateur">
+        <a href=""> Contact </a>
+        <a href="panier.html"> Mon panier </a>
+    </div>
+</header>
+<main class="page_formulaire">
+    <h1> Formulaire de contact </h1>
+    <p> Une question sur nos produits ou sur l'association ?
+        <br> Nous sommes à votre écoute ! </p>
+    <form class="formulaire" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="44863799-b652-4396-853a-ce3096fdc847">
+        <label for="nom" class="obligatoire"> Nom : </label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+        <label for="prenom" class="obligatoire"> Prenom : </label>
+        <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" required>
+        <label for="email" class="obligatoire"> E-mail : </label>
+        <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+        <label for="message"> Message : </label>
+        <textarea id="message" name="message" placeholder="Ecrivez votre message ici ..."></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+</main>
+<footer class="block footer">
+    <div class="navigation_footer">
+        <h2> Navigation </h2>
+        <a href="index.html"> Accueil </a>
+        <a href="categories/boutique_categorie.html"> Boutique </a>
+        <a href="panier.html"> Mon panier</a>
+    </div>
+    <div class="informations">
+        <h2> Informations </h2>
+        <a href="contact.html"> Contact </a>
+        <p> © Site réalisé par Nathan RENARD. Tous droits réservés. </p>
+    </div>
+    <div class="reseaux_sociaux">
+        <h2> Réseaux sociaux </h2>
+        <div class="logos_reseaux_sociaux">
+            <a href="404.html">
+                <img src="./image/logo_instagram.png" alt="Icone d'instagram">
+            </a>
+            <a href="404.html">
+                <img src="./image/logo_facebook.png" alt="Icone de Facebook">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -8,93 +8,95 @@
     <link rel="stylesheet" href="panier.css">
 </head>
 <body class="conteneur">
-<header class="block header">
-    <nav class="menu_header">
-        <a href="index.html"> Accueil </a>
-        <a href="categories/boutique_categorie.html"> Boutique </a>
-    </nav>
-    <a id="logo" href="index.html">
-        <img src="./image/logo.png" alt="logo de l'association">
-    </a>
-    <div class="partie_utilisateur">
-        <a href=""> Contact </a>
-        <a href="panier.html"> Mon panier </a>
-    </div>
-</header>
-<main>
-    <div class="hero">
-        <img src="image/hero/hero_panier.png" alt="Panier">
-    </div>
-    <div class="en_tete_panier">
-        <p> Retrouvez ici les articles sélectionnés pour vos compagnons. </p>
-    </div>
-    <div class="bloc_article_panier">
-        <div class="article_panier">
-            <img src="image/articles/peluche_chien_face.png" alt="Peluche de chien de couleur brune">
-            <div class="information_article_panier">
-                <a class="nom_article_panier" href="./articles/peluche_chien.html"> Peluche de chien </a>
-                <p class="categorie_article_panier"> Chiens </p>
-                <p class="prix_article_panier"> 19,90€ </p>
+    <header class="block header">
+        <nav class="menu_header">
+            <a href="index.html"> Accueil </a>
+            <a href="categories/boutique_categorie.html"> Boutique </a>
+        </nav>
+        <a id="logo" href="index.html">
+            <img src="./image/logo.png" alt="logo de l'association">
+        </a>
+        <div class="partie_utilisateur">
+            <a href="contact.html"> Contact </a>
+            <a href="panier.html"> Mon panier </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="image/hero/hero_panier.png" alt="Panier">
+        </div>
+        <div class="en_tete_panier">
+            <h1> Retrouvez ici les articles sélectionnés pour vos compagnons. </h1>
+        </div>
+        <div class="bloc_article_panier">
+            <div class="article_panier">
+                <img src="image/articles/peluche_chien_face.png" alt="Peluche de chien de couleur brune">
+                <div class="information_article_panier">
+                    <a class="nom_article_panier" href="./articles/peluche_chien.html"> Peluche de chien </a>
+                    <p class="categorie_article_panier"> Chiens </p>
+                    <p class="prix_article_panier"> 19,90€ </p>
+                </div>
+                <div class="resume_article_panier">
+                    <p class="quantite_article_panier"> Quantité : 2 </p>
+                    <p class="prix_total_article_panier"> 39,80 € </p>
+                    <p class="suppression_article_panier"> Supprimer </p>
+                </div>
             </div>
-            <div class="resume_article_panier">
-                <p class="quantite_article_panier"> Quantité : 2 </p>
-                <p class="prix_total_article_panier"> 39,80 € </p>
-                <p class="suppression_article_panier"> Supprimer </p>
+            <div class="article_panier">
+                <img src="image/articles/perchoir_oiseau_vide.png" alt="Perchoir pour oiseaux en bois sur roulettes, équipé de plusieurs branches, d'une échelle en corde, de deux gamelles et de jouets suspendus.">
+                <div class="information_article_panier">
+                    <a class="nom_article_panier" href="./articles/perchoir_oiseau.html"> Perchoir à oiseau </a>
+                    <p class="categorie_article_panier"> Oiseaux </p>
+                    <p class="prix_article_panier"> 44,90€ </p>
+                </div>
+                <div class="resume_article_panier">
+                    <p class="quantite_article_panier"> Quantité : 1 </p>
+                    <p class="prix_total_article_panier"> 44,90 € </p>
+                    <p class="suppression_article_panier"> Supprimer </p>
+                </div>
             </div>
         </div>
-        <div class="article_panier">
-            <img src="image/articles/perchoir_oiseau_vide.png" alt="Perchoir pour oiseaux en bois sur roulettes, équipé de plusieurs branches, d'une échelle en corde, de deux gamelles et de jouets suspendus.">
-            <div class="information_article_panier">
-                <a class="nom_article_panier" href="./articles/perchoir_oiseau.html"> Perchoir à oiseau </a>
-                <p class="categorie_article_panier"> Oiseaux </p>
-                <p class="prix_article_panier"> 44,90€ </p>
+        <div class="recapitulatif_commande">
+            <p class="titre_recapitulatif_commande"> Récapitulatif </p>
+            <div class="sous_total_commande">
+                <p> Sous-Total </p>
+                <p> 89,80 € </p>
             </div>
-            <div class="resume_article_panier">
-                <p class="quantite_article_panier"> Quantité : 1 </p>
-                <p class="prix_total_article_panier"> 44,90 € </p>
-                <p class="suppression_article_panier"> Supprimer </p>
+            <div class="livraison_commande">
+                <p> Livraison </p>
+                <p> 4,90€ </p>
+            </div>
+            <div class="total_commande">
+                <p> Total </p>
+                <p> 94,70€ </p>
+            </div>
+            <a class="valider_panier" href="panier.html"> Valider mon panier ☛ </a>
+            <a class="continuer_achat" href="./categories/boutique_categorie.html"> ☚ Continuer mes achats </a>
+        </div>
+    </main>
+    <footer class="block footer">
+        <div class="navigation_footer">
+            <h2> Navigation </h2>
+            <a href="index.html"> Accueil </a>
+            <a href="categories/boutique_categorie.html"> Boutique </a>
+            <a href="panier.html"> Mon panier</a>
+        </div>
+        <div class="informations">
+            <h2> Informations </h2>
+            <a href="contact.html"> Contact </a>
+            <p> © Site réalisé par Nathan RENARD. Tous droits réservés. </p>
+        </div>
+        <div class="reseaux_sociaux">
+            <h2> Réseaux sociaux </h2>
+            <div class="logos_reseaux_sociaux">
+                <a href="404.html">
+                    <img src="./image/logo_instagram.png" alt="Icone d'instagram">
+                </a>
+                <a href="404.html">
+                    <img src="./image/logo_facebook.png" alt="Icone de Facebook">
+                </a>
             </div>
         </div>
-    </div>
-    <div class="recapitulatif_commande">
-        <p class="titre_recapitulatif_commande"> Récapitulatif </p>
-        <div class="sous_total_commande">
-            <p> Sous-Total </p>
-            <p> 89,80 € </p>
-        </div>
-        <div class="livraison_commande">
-            <p> Livraison </p>
-            <p> 4,90€ </p>
-        </div>
-        <div class="total_commande">
-            <p> Total </p>
-            <p> 94,70€ </p>
-        </div>
-        <a class="valider_panier" href="panier.html"> Valider mon panier ☛ </a>
-        <a class="continuer_achat" href="./categories/boutique_categorie.html"> ☚ Continuer mes achats </a>
-    </div>
-</main>
-<footer class="block footer">
-    <div class="navigation_footer">
-        <h3> Navigation </h3>
-        <a href="index.html"> Accueil </a>
-        <a href="categories/boutique_categorie.html"> Boutique </a>
-    </div>
-    <div class="informations">
-        <h3> Informations </h3>
-        <a href="mentions_legales-crédit.html"> Mentions Légales | Crédit </a>
-    </div>
-    <div class="reseaux_sociaux">
-        <h3> Réseaux sociaux </h3>
-        <div class="logos_reseaux_sociaux">
-            <a href="404.html">
-                <img src="./image/logo_instagram.png" alt="Icone d'instagram">
-            </a>
-            <a href="404.html">
-                <img src="./image/logo_facebook.png" alt="Icone de Facebook">
-            </a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
