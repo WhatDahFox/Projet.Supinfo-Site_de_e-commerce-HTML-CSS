@@ -1,0 +1,21 @@
+Rapport de conformité WCAG - Projet "Adopt' un pote"
+
+Dans le cadre du développement du site, j'ai pris en compte les règles d'accessibilité issues des WCAG afin de rendre le contenu et la navigation accessibles pour tous.
+
+Toutes les images du site disposent d'un attribut "alt" descriptif afin qu'elles puissent être comprises par les utilisateurs de lecteurs d'écran.
+
+Le code reprend le langage HTML et ses balises sémantiques : header, nav, main, footer, h1, h2...
+
+Le formulaire de contact comprend un label à chaque entrée, ainsi qu'un placeholder explicite et enfin un astérisque bien visible pour identifier les champs obligatoires.
+
+La navigation est réalisée avec des liens <a>, tous opérationnels, mis en avant de différentes manières et disponibles à partir de la touche "Tab" du clavier.
+
+Une attention a été apportée à la lisibilité. Grâce a des contrastes de couleurs marqués, chaque texte respecte la catégorie AAA selon l'outil de vérification d'Adobe Express.
+
+J'ai entièrement contrôlé le site via l'outil "axe DevTools" afin de supprimer toutes les erreurs d'accessibilité détectées.
+
+Le site vise donc une bonne prise en compte des recommandations WCAG.
+Que ce soit au niveau de la structure du contenu, des alternatives textuelles, du formulaire, des contrastes et de la navigation.
+
+Renard Nathan.
+
