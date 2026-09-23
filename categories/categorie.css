@@ -36,8 +36,9 @@
 .bloc_articles{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 3vw;
     justify-content: center;
+    margin: 0 3vw;
 }
 .article{
     display: grid;
@@ -87,5 +88,5 @@
 4. Footer
  ============================================ */
 .footer{
-    margin-top: 20px;
+    margin-top: 3vw;
 }
