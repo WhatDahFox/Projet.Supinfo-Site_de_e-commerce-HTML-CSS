@@ -13,12 +13,16 @@ main{
 2. Hero
  ============================================ */
 .hero{
-    height: 300px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+    object-fit: cover;
 }
 .hero h1{
     top: 0;
-    left: 170px;
-    font-size: 50px;
+    left: 17vw;
+    font-size: 5vw;
 }
 /* ============================================
 3. Catégorie
@@ -28,22 +32,27 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 2vw;
+    font-size: clamp(16px, 5vw, 32px);
     color: var(--marron-foncé);
+    text-wrap: balance;
+    gap: 1vw;
+}
+#titre_categorie_boutique p{
+    text-align: right;
 }
 .categorie_boutique{
     display: grid;
-    grid-template-columns: 150px 1fr auto;
-    grid-template-rows: auto 150px;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
     border-radius: 30px;
     border: 1px solid var(--marron-foncé);
-    margin: 10px;
+    margin: 1vw;
     overflow: hidden;
 }
 .categorie_boutique img{
-    width: 150px;
-    height: 150px;
+    width: clamp(10px, 150px, 300px);
+    height: clamp(10px, 150px, 300px);
     display: block;
     object-fit: cover;
     grid-column: 1;
@@ -52,16 +61,15 @@ main{
 .categorie_boutique a{
     grid-column: 3;
     grid-row: 2;
-    margin-right: 20px;
+    margin: 0 2vw 2vw 0;
     align-self: end;
-    margin-bottom: 20px;
 }
 .categorie_boutique h3{
     grid-column: 1/-1;
     grid-row: 1;
     color: var(--marron-foncé);
     font-size: 30px;
-    margin: 1px 0 1px 15px;
+    margin: 0.5vw 0.5vw 0.5vw 3vw;
 }
 .categorie_boutique p, .categorie_boutique img{
     justify-self: center;
@@ -77,14 +85,34 @@ main{
     color: var(--marron-foncé);
 }
 .accroche_categorie{
-    font-size: 2rem;
+    font-size: clamp(20px, 4vw, 48px);
 }
 .liste_objet_categorie{
-    font-size: 1rem;
+    font-size: clamp(10px, 2vw, 32px);
 }
 /* ============================================
 4. Footer
 ============================================ */
 .footer{
-    margin-top: 20px;
+    margin-top: 2vw;
+}
+/* ============================================
+X1. Responsive Mobile ---> Téléphone
+ ============================================ */
+@media (max-width: 550px){
+    .categorie_boutique{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .categorie_boutique a{
+        grid-column: 2;
+        justify-self: center;
+        margin-top: 2vw;
+    }
+    .accroche_categorie{
+        text-align: center;
+    }
+    .categorie_boutique img{
+        justify-self: start;
+    }
 }

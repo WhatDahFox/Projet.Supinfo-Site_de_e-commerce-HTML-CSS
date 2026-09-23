@@ -9,7 +9,7 @@
 }
 h1{
     color: var(--marron-foncé);
-    font-size: 40px;
+    font-size: 5vw
 }
 /* ============================================
 1. Body
@@ -19,7 +19,7 @@ h1{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 0;
-    margin: 1rem;
+    margin: 2vw;
     min-height: 100dvh;
 }
 .block{
@@ -35,16 +35,16 @@ h1{
     background-color: var(--blanc-cassé);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 5px;
+    padding: 0.5vw;
 }
 .menu_header{
     grid-column: 1;
     color: var(--marron-foncé);
-    font-size: 1.1rem;
+    font-size: 3vw;
     display: flex;
-    gap: 1rem;
+    gap: 1.5vw;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 #logo{
     grid-column: 2;
@@ -53,19 +53,19 @@ h1{
 }
 #logo img{
     height: 100%;
-    max-width: 200px;
+    max-width: 30vw;
     object-fit: contain;
 }
 .partie_utilisateur{
     grid-column: 3;
     color: var(--marron-foncé);
     display: flex;
-    gap: 1rem;
+    gap: 1.5vw;
     justify-self: end;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 1.1rem;
-    margin-right: 30px;
+    font-size: 3vw;
+    margin-right: 3vw;
 }
 /* ============================================
 3. Main
@@ -101,9 +101,9 @@ main{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto 20dvw;
-        column-gap: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        column-gap: 1vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     .bloc_categorie_a_la_une{
         grid-row: 2;
@@ -124,8 +124,8 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin: 0 1.5vw;
+        font-size: 3vw;
     }
     .bloc_a_la_une img{
         display: block;
@@ -139,6 +139,7 @@ main{
         bottom: 5px;
         color: white;
         font-weight: bold;
+        font-size: 3vw;
     }
     .fleche{
         position: absolute;
@@ -148,7 +149,7 @@ main{
     }
     .bloc_article_a_la_une{
         grid-row: 3;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3vw;
     }
     /* ============================================
     3.3 Main - Hero final
@@ -168,31 +169,6 @@ main{
         top: 0;
         right: 20px;
     }
-    .chiffre p{
-        position: absolute;
-        color: var(--marron-foncé);
-        text-align: center;
-    }
-    #chiffre1{
-        top: 90px;
-        left: 30px;
-    }
-    #chiffre2{
-        top: 85px;
-        left: 175px;
-    }
-    #chiffre3{
-        top: 75px;
-        left: 340px;
-    }
-    #chiffre4{
-        top: 75px;
-        left: 500px;
-    }
-    #chiffre5{
-        top: 80px;
-        left: 610px;
-    }
 /* ============================================
 4. Footer
  ============================================ */
@@ -201,19 +177,19 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 5px solid var(--marron-foncé);
-    padding: 1rem;
+    padding: 1vw;
     background: var(--blanc-cassé);
 }
 .navigation_footer, .informations, .reseaux_sociaux{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1vw;
     justify-content: flex-start;
 }
 .navigation_footer{
     grid-column: 1;
-    padding-left: 10px;
+    padding-left: 1vw;
     justify-self: start;
 }
 .informations{
@@ -226,19 +202,21 @@ main{
 .reseaux_sociaux{
     grid-column: 3;
     justify-self: end;
-    padding-right: 10px;
+    padding-right: 1vw;
+    text-align: center;
 }
 .logos_reseaux_sociaux img{
     display: block;
-    height: 30px;
+    height: 6vw;
     object-fit: contain;
-    margin: 5px;
+    margin: 0.5vw;
 }
 .logos_reseaux_sociaux{
     display: flex;
 }
 .footer h2{
     margin: 0;
+    font-size: clamp(8px, 5vw, 24px);
 }
 /* ============================================
 5. Page 404
@@ -253,21 +231,26 @@ main{
 }
 .page404 img{
     display: block;
-    width: 500px;
-    margin-top: 1rem;
+    width: 80vw;
+    margin-top: 2vw;
 }
 .page404 h1{
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1vw;
 }
 .page404 p{
-    margin: 0;
+    margin: 0 2vw;
+    text-align: center;
 }
 .page404 h2{
-    margin: 1rem 1rem 2rem 1rem;
+    margin: 2vw 2vw 4vw 2vw;
+    text-align: center;
 }
 .page404 a{
-    margin: 1rem;
+    margin: 2vw;
+}
+.page404 h1, .page404 h2, .page404 p{
+    text-wrap: balance;
 }
 /* ============================================
 6. Page Contact
@@ -281,51 +264,74 @@ main{
     background: var(--beige);
 }
 .page_formulaire h1{
-    font-size: 4rem;
-    margin: 0 1rem 1rem 1rem;
+    font-size: clamp(16px, 8vw, 40px);
+    margin: 2vw;
+    text-align: center;
 }
 .page_formulaire p{
-    font-size: 1.5rem;
-    margin: 0 0 2rem 0;
+    font-size: clamp(8px, 3vw, 20px);
+    margin: 0 0 2vw 0;
     text-align: center;
 }
 .formulaire{
     display: flex;
     flex-direction: column;
     background-color: var(--blanc-cassé);
-    padding: 1rem 4rem;
-    font-size: 2rem;
+    padding: 2vw 8vw;
+    font-size: 4vw;
     box-sizing: border-box;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 1vw;
+    margin: 2vw;
+    width: 95%;
+    max-width: 500px;
 }
 .formulaire input{
     width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
+    align-self: center;
+    padding: clamp(4px, 2vw, 8px);
+    font-size: clamp(8px, 2vw, 16px);
     box-sizing: border-box;
+    margin: 0;
+}
+.formulaire label{
+    font-size: clamp(8px, 3vw, 16px);
+    margin-bottom: 0;
 }
 .formulaire textarea{
     width: 100%;
-    padding: 3rem 8rem;
-    font-size: 1rem;
+    padding: 2vw;
+    font-size: clamp(8px, 2vw, 16px);
     box-sizing: border-box;
+    min-height: 20vh;
 }
 .formulaire input[type="submit"]{
     width: auto;
     align-self: center;
-    padding: 1rem 2rem;
-    margin-top: 1rem;
+    padding: clamp(4px, 2vw, 8px) clamp(8px, 4vw, 16px);
+    margin-top: 2vw;
+    font-size: clamp(4px, 2vw, 16px);
 }
 .obligatoire::after{
     content: "*";
     color: red;
 }
+
 /* ============================================
-X. Responsive Mobile ---> Ordinateur
+X1. Responsive Mobile ---> Téléphone
+ ============================================ */
+@media (max-width: 550px){
+.formulaire{
+    padding: 1vw 4vw;
+}
+}
+/* ============================================
+X2. Responsive Mobile ---> Tablette
  ============================================ */
 @media (min-width: 800px){
-    :root{
+    .conteneur{
         margin: 0;
     }
 }
+/* ============================================
+X3. Responsive Mobile ---> Ordinateur
+ ============================================ */

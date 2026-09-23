@@ -12,14 +12,15 @@ main{
     background-color: var(--blanc-cassé);
 }
 .en_tete_panier h1{
-    font-size: 1.5rem;
+    font-size: clamp(16px, 4vw, 40px);
+    text-wrap: balance;
 }
 /* ============================================
 2. En tête panier
  ============================================ */
 .en_tete_panier{
     color: var(--marron-foncé);
-    margin-left: 30px;
+    margin-left: 3vw;
 }
 /* ============================================
 3. Article panier
@@ -28,16 +29,16 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     text-align: center;
-    margin: 10px 30px;
+    margin: 1vw 3vw;
 }
 .article_panier{
     display: grid;
-    grid-template-columns: 200px 1fr auto;
+    grid-template-columns: 30vw 1fr auto;
     grid-template-rows: auto;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     text-align: center;
     border-top: 1px solid var(--marron-clair);
@@ -45,19 +46,22 @@ main{
 }
 .article_panier img{
     grid-column: 1;
-    width: 200px;
+    width: 80%;
+    max-height: 300px;
+    object-fit: cover;
 }
 .information_article_panier{
     grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: start;
-    text-align: center;
-    margin-left: 10px;
+    text-align: start;
+    margin: 0 1vw;
+    font-size: clamp(10px, 2vw, 32px);
 }
 .nom_article_panier, .prix_article_panier{
     color: var(--marron-foncé);
-    font-size: 1.3rem;
+    font-size: clamp(10px, 3vw, 40px);
     justify-self: start;
 }
 .categorie_article_panier{
@@ -69,7 +73,8 @@ main{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 1vw;
+    font-size: clamp(10px, 2vw, 32px);
 }
 .quantite_article_panier{
     background-color: var(--marron-clair);
@@ -93,7 +98,7 @@ main{
     border: 1px solid var(--blanc-cassé);
     background-color: var(--beige);
     border-radius: 20px;
-    margin: 20px 100px;
+    margin: 2vw 10vw;
 }
 .titre_recapitulatif_commande{
     color: var(--marron-foncé);
@@ -101,15 +106,16 @@ main{
     text-align: center;
     font-weight: bold;
     justify-self: start;
-    margin: 10px 0 0 20px;
-    font-size: 2rem;
+    margin: 1vw 0 0 2vw;
+    font-size: clamp(16px, 4vw, 60px);
 }
 .sous_total_commande, .livraison_commande, .total_commande{
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: auto 20px;
+    margin: auto 2vw;
+    font-size: clamp(10px, 2vw, 32px);
 }
 .sous_total_commande{
     grid-row: 2;
@@ -143,5 +149,11 @@ main{
     justify-self: center;
     padding: 10px 20px 10px 20px;
     border-radius: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 2vw;
 }
+
+/* ============================================
+X3. Responsive Mobile ---> Ordinateur
+ ============================================ */
+
+
