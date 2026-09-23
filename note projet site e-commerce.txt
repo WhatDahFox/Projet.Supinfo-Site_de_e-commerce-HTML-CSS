@@ -1,9 +1,0 @@
-Etape restante :
-- Organisation des fichiers
-- Nettoyage du code
-- Responsive tablette
-- Responsive Ordinateur
-
-Diapositive : 
-- Court rapport avec les détails de conformité WCAG : 3 points
-

@@ -61,9 +61,7 @@ main{
     grid-row: 1;
     color: var(--marron-foncé);
     font-size: 30px;
-    margin-left: 15px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin: 1px 0 1px 15px;
 }
 .categorie_boutique p, .categorie_boutique img{
     justify-self: center;
@@ -84,30 +82,6 @@ main{
 .liste_objet_categorie{
     font-size: 1rem;
 }
-    /* ============================================
-    3.1 Catégorie - Chiens
-     ============================================ */
-    .categorie1{
-        grid-row: 3;
-    }
-    /* ============================================
-    3.2 Catégorie - Chats
-    ============================================ */
-    .categorie2{
-        grid-row: 4;
-    }
-    /* ============================================
-    3.3 Catégorie - Rongeurs
-    ============================================ */
-    .categorie3{
-        grid-row: 5;
-    }
-    /* ============================================
-    3.4 Catégorie - Oiseaux
-    ============================================ */
-    .categorie4{
-        grid-row: 6;
-    }
 /* ============================================
 4. Footer
 ============================================ */

@@ -31,7 +31,7 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 30px;
 }
 .article_panier{
     display: grid;
@@ -69,7 +69,6 @@ main{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    text-align: center;
     margin-right: 10px;
 }
 .quantite_article_panier{
@@ -78,14 +77,11 @@ main{
     border-radius: 20px;
     padding: 5px 10px;
 }
-.prix_article_panier{
-    color: var(--marron-foncé);
-}
 .suppression_article_panier{
     border-bottom: 1px solid var(--marron-foncé);
 }
 /* ============================================
-3. Récapitulatif commande
+4. Récapitulatif commande
  ============================================ */
 .recapitulatif_commande{
     display: grid;
@@ -97,7 +93,7 @@ main{
     border: 1px solid var(--blanc-cassé);
     background-color: var(--beige);
     border-radius: 20px;
-    margin: 20px 100px 20px 100px;
+    margin: 20px 100px;
 }
 .titre_recapitulatif_commande{
     color: var(--marron-foncé);
@@ -113,7 +109,7 @@ main{
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: auto 20px auto 20px;
+    margin: auto 20px;
 }
 .sous_total_commande{
     grid-row: 2;
@@ -126,13 +122,11 @@ main{
 }
 .valider_panier{
     grid-row: 5;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     background-color: var(--marron-foncé);
     color: white;
     justify-self: center;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     border-radius: 30px;
     margin-bottom: 10px;
 }

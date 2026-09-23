@@ -24,7 +24,7 @@
     border-radius: 30px;
     border: 1px solid var(--marron-foncé);
     margin: 20px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
 }
 #categorie_actuelle{
     background-color: var(--marron-clair);
@@ -68,7 +68,7 @@
 .prix_article{
     grid-row: 3;
 }
-.article a{
+.article a, .coming_soon{
     grid-row: 4;
     align-self: end;
     justify-self: stretch;
@@ -79,13 +79,13 @@
     color: white;
     border-radius: 30px;
 }
-.article a.coming_soon{
+.coming_soon{
     background-color: white;
     color: black;
 }
 /* ============================================
 4. Footer
  ============================================ */
-footer{
+.footer{
     margin-top: 20px;
 }
