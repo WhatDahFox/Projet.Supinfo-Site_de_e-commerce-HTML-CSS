@@ -11,6 +11,12 @@ h1{
     color: var(--marron-foncé);
     font-size: 5vw
 }
+a:hover, a:focus{
+    color: darkred;
+}
+a:active{
+    color: darkgreen;
+}
 /* ============================================
 1. Body
  ============================================ */
@@ -125,7 +131,7 @@ main{
         justify-content: space-between;
         align-items: center;
         margin: 0 1.5vw;
-        font-size: 3vw;
+        font-size: 2vw;
     }
     .bloc_a_la_une img{
         display: block;
@@ -158,6 +164,7 @@ main{
         grid-row: 4;
         overflow: hidden;
         position: relative;
+        margin-top: 3vw;
     }
     #hero_final img{
         display: block;
@@ -186,6 +193,7 @@ main{
     align-items: center;
     gap: 1vw;
     justify-content: flex-start;
+    font-size: 2vw;
 }
 .navigation_footer{
     grid-column: 1;
@@ -216,7 +224,7 @@ main{
 }
 .footer h2{
     margin: 0;
-    font-size: clamp(8px, 5vw, 24px);
+    font-size: 3vw;
 }
 /* ============================================
 5. Page 404
@@ -264,12 +272,12 @@ main{
     background: var(--beige);
 }
 .page_formulaire h1{
-    font-size: clamp(16px, 8vw, 40px);
+    font-size: clamp(16px, 8vw, 100px);
     margin: 2vw;
     text-align: center;
 }
 .page_formulaire p{
-    font-size: clamp(8px, 3vw, 20px);
+    font-size: 3vw;
     margin: 0 0 2vw 0;
     text-align: center;
 }
@@ -283,13 +291,13 @@ main{
     gap: 1vw;
     margin: 2vw;
     width: 95%;
-    max-width: 500px;
+    max-width: 1000px;
 }
 .formulaire input{
     width: 100%;
     align-self: center;
-    padding: clamp(4px, 2vw, 8px);
-    font-size: clamp(8px, 2vw, 16px);
+    padding: 2vw;
+    font-size: 2vw;
     box-sizing: border-box;
     margin: 0;
 }
@@ -335,3 +343,8 @@ X2. Responsive Mobile ---> Tablette
 /* ============================================
 X3. Responsive Mobile ---> Ordinateur
  ============================================ */
+@media (min-width: 1000px){
+    .bloc_categorie_a_la_une, .bloc_article_a_la_une, .formulaire{
+        margin: 0.5vw 20vw;
+    }
+}

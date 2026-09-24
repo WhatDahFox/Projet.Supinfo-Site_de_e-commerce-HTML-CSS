@@ -51,8 +51,8 @@ main{
     overflow: hidden;
 }
 .categorie_boutique img{
-    width: clamp(10px, 150px, 300px);
-    height: clamp(10px, 150px, 300px);
+    width: 150px;
+    height: 150px;
     display: block;
     object-fit: cover;
     grid-column: 1;
@@ -63,6 +63,7 @@ main{
     grid-row: 2;
     margin: 0 2vw 2vw 0;
     align-self: end;
+    font-size: 2vw;
 }
 .categorie_boutique h3{
     grid-column: 1/-1;
@@ -114,5 +115,13 @@ X1. Responsive Mobile ---> Téléphone
     }
     .categorie_boutique img{
         justify-self: start;
+    }
+}
+/* ============================================
+X3. Responsive Mobile ---> Ordinateur
+ ============================================ */
+@media (min-width: 1000px){
+    #titre_categorie_boutique, .categorie_boutique{
+        margin: 0.5vw 20vw;
     }
 }

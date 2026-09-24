@@ -46,9 +46,10 @@ main{
 }
 .article_panier img{
     grid-column: 1;
-    width: 80%;
+    width: 70%;
     max-height: 300px;
-    object-fit: cover;
+    object-fit: contain;
+    display: block;
 }
 .information_article_panier{
     grid-column: 2;
@@ -155,5 +156,10 @@ main{
 /* ============================================
 X3. Responsive Mobile ---> Ordinateur
  ============================================ */
+@media (min-width: 1000px){
+    .en_tete_panier, .bloc_article_panier, .recapitulatif_commande{
+        margin: 0.5vw 20vw;
+    }
+}
 
 
